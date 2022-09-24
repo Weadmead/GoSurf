@@ -1,0 +1,18 @@
+$aqua: #4AF6CD;
+
+@mixin f300 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
+@mixin f500 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+@mixin f700 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
+@mixin f800 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+}
