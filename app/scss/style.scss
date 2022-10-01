@@ -70,6 +70,28 @@
     }
 }
 
+.headline-right {
+    position: relative;
+    padding-right: 103px;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 7.33333px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        width: 80px;
+        height: 1px;
+        top: 50%;
+        right: 0;
+    }
+}
+
 .slider-arrows {
     position: absolute;
     top: 40px;
@@ -235,7 +257,6 @@
 
 //start surf
 .surf {
-    padding: 160px 0px 120px;
     background-image: url(../images/surf-side.png);
     background-position: right 200px;
     background-repeat: no-repeat;
@@ -397,8 +418,9 @@
             width: 285px;
             padding: 28px 31px 0px 32px;
         }
-        .slider-dots__circle{
-            &::before{
+
+        .slider-dots__circle {
+            &::before {
                 content: "";
                 position: absolute;
                 width: 0;
@@ -409,8 +431,8 @@
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 bottom: 15px;
-                
-    
+
+
             }
         }
     }
@@ -487,16 +509,17 @@
         border-radius: 6px;
         bottom: 35px;
         transform: translateX(-50%);
-  
+
     }
 }
 
 .slider-dots--1 {
     top: 335px;
     left: 0;
-    .slider-dots__content{
+
+    .slider-dots__content {
         transform: translateX(0);
-    
+
     }
 }
 
@@ -505,7 +528,7 @@
     left: 0;
 
     .slider-dots__circle {
-        position: relative;       
+        position: relative;
 
         &::after {
             content: "";
@@ -548,10 +571,123 @@
 .slider-dots--8 {
     top: 470px;
     left: 35px;
-    .slider-dots__content{
+
+    .slider-dots__content {
         transform: translateX(-262px);
-       
+
     }
 }
+
+//end section surf
+
+//start section travel
+.holder {
+    background-image: url(../images/cocktail.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .slider-arrows{
+        top: 147px;
+        opacity: .5;
+    }
+}
+
+.holder-slider {
+    &__head {
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+
+    &__description {
+        padding: 160px 0px 0px 132px;
+        min-height: 320px;
+        background-repeat: no-repeat;
+        background-position: center right;
+        margin-top: -230px;
+        img {
+            padding-left: 24px;
+        }
+        .description__head{
+            position: relative;
+            padding-right: 215px;
+            img{
+                position: absolute;
+                right: 140px;
+                top: 0;
+            }
+            .holder__star-list{
+                position: absolute;
+                right: 0;
+                top: 0;
+                li{
+                    display: inline-block;
+                    margin-left: -25px;                                                    
+                }
+                img {
+                    position: static;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    &__subtitle {
+        text-align: right;
+        padding-top: 132px;
+    }
+
+    &__btn {
+        text-align: center;
+
+    }
+}
+
+.holder-slider__info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 75px;
+
+    &-item {
+        min-height: 200px;
+        margin-bottom: 66px;
+        position: relative;
+    }
+
+    &-subtitle {
+        line-height: 22px;
+        letter-spacing: 8px;
+        opacity: 0.5;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 97px;
+        left: -97px;
+        width: 200px;
+        height: 0;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-align: right;
+    }
+
+    &-title {
+        padding-left: 40px;       
+        position: relative;
+        span {           
+            font-size: 14px;
+            line-height: 36px;
+            text-align: right;
+            letter-spacing: 5.25px;
+            text-transform: uppercase;
+            opacity: 0.75;
+            font-weight: 400;
+            position: absolute;
+            right: 0;
+            bottom: -19px;
+        }
+    }
+}
+
+//end travel
+
+//start sleep
 
 @import 'media';

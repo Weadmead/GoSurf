@@ -33,6 +33,14 @@ $(function () {
         focusOnSelect: true,
 
     });
+
+    
+    $('.holder__slider').slick({
+        infinite: true,        
+        fade: true,        
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/arrow-left.svg" alt="">',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="">'
+    });
 });
 
 
