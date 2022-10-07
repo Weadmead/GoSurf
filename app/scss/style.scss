@@ -126,6 +126,7 @@
     align-items: center;
     border-top: 4px solid #fff;
     padding-top: 6px;
+    margin-left: 15px;
 
     &__number {
         font-size: 24px;
@@ -164,6 +165,49 @@
     top: 0;
     left: 0;
     z-index: 4;
+
+}
+
+// .menu-btn {
+//     width: 60px;
+//     height: 60px;
+//     display: flex;
+//     z-index: 20;
+//     right: 20px;
+//     top: 70px;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     &__inner{
+//         width: 40px;
+//     }
+//     &__line {
+//         height: 5px;        
+//         background-color: $aqua;
+//         + .menu-btn__line {
+//             margin-top: 5px;
+//         }
+//     }
+// }
+.menu-btn {
+    width: 60px;
+    height: 60px;
+    display: none;
+    z-index: 20;
+    right: 20px;
+    top: 70px;   
+    position: absolute;
+    font-size: 16px;
+    text-align: right;
+    border-top-left-radius: 4px;
+    &__line {
+        background-color: $aqua;
+            padding: 8px 65px 8px 8px;
+            border-top-left-radius: 6px ;
+            border-bottom-left-radius: 6px ;
+    }
+      
+       
 
 }
 
@@ -500,6 +544,7 @@
         height: 23px;
         background-color: $aqua;
         border-radius: 50%;
+        box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
     }
 
     &__content {
@@ -529,6 +574,7 @@
 
     .slider-dots__circle {
         position: relative;
+
         &::after {
             content: "";
             position: absolute;
@@ -707,13 +753,15 @@
     background-image: url(../images/shop-bg.png);
     background-repeat: no-repeat;
     background-position: right center;
-    .slider-arrows{
+
+    .slider-arrows {
         opacity: .25;
     }
 }
 
 .shop__slider {
     padding-left: 132px;
+
     &-info {
         max-width: 480px;
         margin-right: 40px;
@@ -801,27 +849,32 @@
 .surfboard {
     position: relative;
 }
-.surfboard-box{
+
+.surfboard-box {
     position: absolute;
     right: 40px;
     top: 215px;
-    &__circle{
+
+    &__circle {
         width: 20px;
         height: 20px;
         border-radius: 50%;
         position: relative;
         background-color: #fff;
         cursor: pointer;
-        &.active{
-            + .surfboard-box__content{
+
+        &.active {
+            +.surfboard-box__content {
                 display: block;
             }
-            .circle-row{
+
+            .circle-row {
                 transform: translate(-50%, -50%) rotate(0deg);
             }
         }
     }
-    &__content{
+
+    &__content {
         position: absolute;
         width: 359px;
         text-transform: uppercase;
@@ -832,6 +885,7 @@
         top: -15px;
         left: 40px;
         display: none;
+
         &::before {
             content: "";
             position: absolute;
@@ -843,22 +897,27 @@
         }
     }
 }
+
 .surfboard__position--1 {
     right: 40px;
     top: 215px;
 }
+
 .surfboard__position--2 {
     left: -6px;
     top: 313px;
 }
+
 .surfboard__position--3 {
     top: 615px;
     left: 52px;
-    .surfboard-box__content{
+
+    .surfboard-box__content {
         padding-left: 0;
         padding-right: 104px;
         top: -15px;
         left: -400px;
+
         &::before {
             content: "";
             position: absolute;
@@ -872,7 +931,7 @@
     }
 }
 
-.circle-row{
+.circle-row {
     background-color: $aqua;
     position: absolute;
     width: 12px;
@@ -880,17 +939,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
-    & + .circle-row{
-        transform: translate(-50%, -50%) rotate(90deg); 
+
+    &+.circle-row {
+        transform: translate(-50%, -50%) rotate(90deg);
     }
 }
+
 //end shop
 
 //start footer
-.footer{
+.footer {
     text-align: center;
-    padding: 285px 0 34px 132px;    
-    &__copy{
+    padding: 285px 0 34px 132px;
+
+    &__copy {
         padding-top: 27px;
         font-size: 12px;
         font-weight: 300;
@@ -898,12 +960,14 @@
         letter-spacing: 1.05px;
         text-transform: uppercase;
         opacity: 0.5;
-        
+
     }
-    .btn{
-        span{
+
+    .btn {
+        span {
             padding: 17px 17px 15px;
-            &::after{
+
+            &::after {
                 display: none;
             }
         }

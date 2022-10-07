@@ -90,6 +90,10 @@ $(function () {
     });
 
 
+    $('.menu-btn').on('click', function (){
+      $('.menu, .header__date, .header__loacation, .header__search').toggleClass('active');
+    });
+
 
 });
 
