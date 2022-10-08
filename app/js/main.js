@@ -22,7 +22,29 @@ $(function () {
         slidesToScroll: 1, 
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/arrow-left.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="">',
-        asNavFor: '.slider-map',      
+        asNavFor: '.slider-map',
+        responsive: [
+          {
+            breakpoint: 1210,
+            settings: {
+              slidesToShow: 3,              
+            }
+          },
+          {
+            breakpoint: 780,
+            settings: {
+              slidesToShow: 2,
+              
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]      
     });
 
     $('.slider-map').slick({
