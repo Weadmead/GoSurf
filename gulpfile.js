@@ -21,6 +21,7 @@ gulp.task('sass', function(){
 gulp.task('script', function(){
     return gulp.src([        
         'node_modules/slick-carousel/slick/slick.js',        
+        'node_modules/wow.js/dist/wow.js',        
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ])
         .pipe(concat('libs.min.js'))

@@ -195,19 +195,20 @@
     display: none;
     z-index: 20;
     right: 20px;
-    top: 70px;   
+    top: 70px;
     position: absolute;
     font-size: 16px;
     text-align: right;
     border-top-left-radius: 4px;
+
     &__line {
         background-color: $aqua;
-            padding: 8px 65px 8px 8px;
-            border-top-left-radius: 6px ;
-            border-bottom-left-radius: 6px ;
+        padding: 8px 31px 8px 8px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
     }
-      
-       
+
+
 
 }
 
@@ -337,6 +338,7 @@
     }
 }
 
+
 .subtitle__box {
     text-align: right;
     padding-right: 80px;
@@ -361,7 +363,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    
+
     }
 
     &__inner {
@@ -465,6 +467,7 @@
             display: block;
             width: 285px;
             padding: 28px 31px 0px 32px;
+            
         }
 
         .slider-dots__circle {
@@ -479,8 +482,8 @@
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 bottom: 15px;
-                
-                
+
+
 
 
             }
@@ -560,6 +563,7 @@
         border-radius: 6px;
         bottom: 35px;
         transform: translateX(-50%);
+        z-index: 1;
 
     }
 }
